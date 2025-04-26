@@ -1,6 +1,8 @@
 #include <iostream>	//전처리 지시자
 #include <limits>
 
+#define PIE 3.1415926535;
+
 /*
 C++에서 함수를 사용하고자 한다면...
 반드시 함수의 원형을 미리 정의하여야 한다
@@ -75,6 +77,34 @@ int main() {
 
 	cout << a << " " << b << " " << c << endl;
 	*/
+
+	// 상수
+	/*
+	const float PI = 3.1415926535;
+
+	int r = 3;
+	float s = r * r * PIE;
+
+	int r2 = 3;
+	float s2 = r2 * r2 * PI;
+
+	cout << s << endl;
+	cout << s2 << endl;
+	*/
+	//데이터형 변환(형 변환)
+	/*
+	int a = 3.141592;
+	cout << a << endl;
+
+	// 강제적 형 변환
+	//()를 통한 형 변환
+	char ch = 'M';
+	cout << (int)ch << "	" << int(ch) << endl;
+	// static_cast를 통한 형 변환
+	cout << static_cast<int>(ch) << endl;
+	*/
+
+
 
 	return 0;
 }
