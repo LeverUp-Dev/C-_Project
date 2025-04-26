@@ -124,6 +124,43 @@ int main() {
 	cout << ch4 << endl;
 	*/
 
+	//사용자 입력
+	//한글은 지원 안함
+	/*
+	const int Size = 15;
+	char name1[Size];	//비어있는 배열
+	char name2[Size] = "C++programing"; //문자열 상수로 초기화
+
+	cout << "안녕하세요. 저는 " << name2;
+	cout << "입니다. 성함이 어떻게 되시나요?\n";
+
+	// cin >> 변수
+	// cin.get()
+	// cin.getline()
+	cin.getline(name1, Size);
+
+	cout << "아! 성함이 " << name1 << "이시군요.";
+	cout << "당신의 이름은 " << strlen(name1) << "자 입니다만\n";
+	cout << sizeof(name1) << " 바이트 크기의 배열에 저장되었습니다.";
+	cout << " 당신의 이름은 " << name1[0] << "자로 시작되는군요.\n";
+	
+	name2[3] = '\0';
+	cout << "제 이름의 처음 세 문자는 다음과 같습니다.";
+	cout << name2 << endl;
+	*/
+	//string
+	/*
+	char ch1[20];
+	char ch2[20] = "jauar";
+	// ch1 = ch2은 틀림
+	// ch1 = ch2;
+
+	string str1;
+	string str2 = "doyoung";
+	str1 = str2;
+	cout << str1 << endl;
+	*/
+
 	
 
 	return 0;
