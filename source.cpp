@@ -104,7 +104,27 @@ int main() {
 	cout << static_cast<int>(ch) << endl;
 	*/
 
+	// ¹è¿­
+	/*
+	short month[12] = { 1, 2, 3 };
 
+	cout << month[0] << endl;
+	cout << month << endl;
+
+	char ch1[5] = { 'H', 'e', 'l', 'l', 'o' };
+	cout << ch1 << endl;
+
+	char ch2[6] = { 'H', 'e', 'l', 'l', 'o', '\0' };
+	cout << ch2 << endl;
+
+	char ch3[] = { 'H', 'e', 'l', 'l', 'o'};
+	cout << ch3 << endl;
+
+	char ch4[] = "Hello";
+	cout << ch4 << endl;
+	*/
+
+	
 
 	return 0;
 }
