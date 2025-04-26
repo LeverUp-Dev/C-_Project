@@ -161,6 +161,66 @@ int main() {
 	cout << str1 << endl;
 	*/
 
+	// 구조체
+	/* 방법1
+	struct Player
+	{
+		string name;
+		string job;
+		float health;
+		float stamina;
+	};
+
+	Player P1;
+	P1.name = "Meharu";
+	P1.job = "Magician";
+	P1.health = 100.12;
+	P1.stamina = 100.12;
+
+	Player P2 = {
+		"Meharu",
+		"Magician",
+		100.12,
+		100.12
+	};
+
+	cout << P1.name << endl;
+	cout << P1.job << endl;
+	cout << P1.health << endl;
+	cout << P1.stamina << endl;
+	*/
+	/* 방법2
+	struct Player
+	{
+		string name;
+		string job;
+		float health;
+		float stamina;
+	} B;
+
+	B = {
+
+	};
+
+	cout << B.name << endl;
+	*/
+	// 배열 활용
+	/*
+	struct Player {
+		string name;
+		string job;
+		float health;
+		float stamina;
+	};
+
+	Player P[2] = {
+		{"A", "B", 1.1, 1.2},
+		{"C", "D", 1.1, 1.2}
+	};
+
+	cout << P[0].name << endl;
+	*/
+
 	
 
 	return 0;
