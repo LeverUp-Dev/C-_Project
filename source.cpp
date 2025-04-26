@@ -22,6 +22,7 @@ int main() {
 	*/
 
 	//정수형
+	/*
 	int n_int = INT_MAX;
 
 	cout << "int는 " << sizeof n_int << "바이트이다." << endl;
@@ -56,6 +57,24 @@ int main() {
 	int d = 3.14;
 
 	cout << c << " " << d << endl;
+	*/
+
+	// 문자형
+	/*
+	// 한글은 ASCII 코드를 지원하지 않음
+	char b = 'a';
+
+	cout << b << endl;
+	*/
+	// bool 자료형
+	//bool형은 0은 0으로 0 초과의 숫자는 1로 출력
+	/*
+	bool a = 0;
+	bool b = 10;
+	bool c = 1;
+
+	cout << a << " " << b << " " << c << endl;
+	*/
 
 	return 0;
 }
