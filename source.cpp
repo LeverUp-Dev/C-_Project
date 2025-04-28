@@ -1,7 +1,8 @@
 #include <iostream>	//전처리 지시자
 #include <limits>
 
-#define PIE 3.1415926535;
+//#define PIE 3.1415926535;
+//#pragma warning(disable:4996)
 
 /*
 C++에서 함수를 사용하고자 한다면...
@@ -306,17 +307,18 @@ int main() {
 	사용한 메모리를 다시 메모리 풀로 환수
 	환수된 메모리는 프로그램의 다른 부분이 다시 사용할 수 있음
 	*/
-
+	/*
 	int* ps = new int;
 	// 메모리 사용
 	delete ps;
+	*/
 	/*
 	1. new로 대입하지 않은 메모리는 delete로 해제 할 수 없음 
 	2. 같은 메모리 블록은 연달아 두 번 delete로 해제할 수 없음
 	3. new[]로 메모리를 대입할 경우 delete[]로 해제함
 	4. 배열을 사용하지 않았다면 delete도 배열로 사용하지 말아야 함
 	*/
-	
+	/*
 	double* p3 = new double[3]; //double 형 데이터 3개를 저장할 수 있는 공간을 대입한다.
 	p3[0] = 0.2;
 	p3[1] = 0.5;
@@ -331,6 +333,46 @@ int main() {
 
 	p3 = p3 - 1;	//다시 시작 위치를 지시
 	delete[] p3;	//배열 메모리를 해제
+	*/
+	
+	// 포인터 연산
+	/*
+	char animal[20];
+	char* ps;
+
+	cout << "동물 이름을 입력\n";
+	cin >> animal;
+
+	ps = new char[strlen(animal) + 1];
+	strcpy(ps, animal);
+
+	cout << "입력하신 동물 이름은 복사하였습니다." << endl;
+	cout << "입력하신 동물 이름은 " << animal << "이고, 그 주소는 " << (int*)animal << " 입니다." << endl;
+	cout << "복사된 동물 이름은 " << ps << "이고, 그 주소는 " << (int*)ps << " 입니다." << endl;
+	*/
+
+	// 동적 구조체 생성
+	//temp* ps = new temp;
+	/*
+	struct Person
+	{
+		char name[20];
+		int age;
+	};
+
+	Person* temp = new Person;
+
+	cout << "당신의 이름을 무엇인가요?\n";
+	cin >> temp->name;
+
+	cout << "당신은 몇 살인가요?\n";
+	cin >> (*temp).age;
+
+	cout << "당신의 이름은 " << temp->name << "\n";
+	cout << "당신의 나이는 " << temp->age << endl;
+	*/
+
+	
 
 	return 0;
 }
